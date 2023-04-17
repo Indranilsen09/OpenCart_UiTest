@@ -1,5 +1,6 @@
 package Neil_Testing.StepDefinitions;
 
+import Neil_Testing.UiPages.openCartPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -9,7 +10,8 @@ public class OpenCart_StepDef
     @Given("^User Navigate to AUT$")
     public void User_Navigate_to_AUT()
     {
-
+        //making chromedefault for LaunchingAUT
+        openCartPage.launchingOperation();
     }
     @When("Click on MyAccount to {string}")
     public void userClicksMyAccount(String args){
